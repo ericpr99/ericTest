@@ -13,4 +13,10 @@ public class HelloController {
 		System.out.println("In controller!!!!!");
         return new ModelAndView("hello"); // 根據view resolver mapping至hello.jsp
     }
+	
+	@RequestMapping("/")
+    public ModelAndView wellcome() {
+		
+        return new ModelAndView("wellcome"); // 根據view resolver mapping至hello.jsp
+    }
 }
