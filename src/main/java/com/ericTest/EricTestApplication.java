@@ -1,4 +1,4 @@
-package com.ericTest.demo;
+package com.ericTest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
