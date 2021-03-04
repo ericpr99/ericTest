@@ -7,16 +7,17 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloController {
 
-	@RequestMapping("/hello")
-    public ModelAndView hello() {
+	@RequestMapping("/")
+    public ModelAndView wellcome() {
 		
 		System.out.println("In controller!!!!!");
         return new ModelAndView("hello"); // 根據view resolver mapping至hello.jsp
     }
 	
-	@RequestMapping("/")
-    public ModelAndView wellcome() {
+	@RequestMapping("/hello")
+    public ModelAndView hello() {
 		
-        return new ModelAndView("wellcome"); // 根據view resolver mapping至hello.jsp
+		System.out.println("In controller!!!!!");
+        return new ModelAndView("hello"); // 根據view resolver mapping至hello.jsp
     }
 }
